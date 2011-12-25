@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+   <article>
+      <h2 class="post-title"><%= link_to post.title, post %></h2>
+      <p class="excerpt">
+         <%= post.excerpt %>
+         <p class="readmore"><%= link_to "Read More", post %></p>
+      </p>
+   </article>
+<% end %>
