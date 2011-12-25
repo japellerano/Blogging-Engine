@@ -8,8 +8,6 @@ class Ability
          can :manage, :all
       elseif user.role? :operator
          can :manage, Post
-      elseif user.role? :subscriber
-         can :manage, Comment
       else
          can :read, :all
       end
